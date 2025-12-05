@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getMessage",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "一个简单的智能合约，用于存储和检索 \"Hello, World!\" 消息，并附带时间戳。",
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "合约构造函数，在部署合约时调用。 它将 _message 初始化为 \"Hello, World!\"。"
+				}
+			},
+			"title": "HelloWorld",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"blank.sol": "HelloWorld"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"blank.sol": {
+			"keccak256": "0xdf5e86a3f257c62d6b90d5f5297dc34e2845618376b0738381f9f563f6c6b892",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://30c707ed787a1cfc60cb42b65d3f75b2defd5858b5deda26f19588ddb0ddec5c",
+				"dweb:/ipfs/QmR2vNpZeXJtL1f7DBwKhBybSFoNRSgH4gQ26MTBRU9MG4"
+			]
+		}
+	},
+	"version": 1
+}
