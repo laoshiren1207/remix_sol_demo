@@ -1,0 +1,123 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "add",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "result",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "addWithOverflowCheck",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "sum",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isOverflow",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "一个执行加法运算的简单智能合约",
+			"kind": "dev",
+			"methods": {
+				"add(uint256,uint256)": {
+					"details": "将两个无符号整数相加",
+					"params": {
+						"a": "第一个加数",
+						"b": "第二个加数"
+					},
+					"returns": {
+						"result": "两数之和"
+					}
+				},
+				"addWithOverflowCheck(uint256,uint256)": {
+					"details": "将两个无符号整数相加，并返回两个值：和 以及 是否发生了溢出（未发生溢出）      这展示了如何显式处理潜在的溢出而不让交易失败",
+					"params": {
+						"a": "第一个加数",
+						"b": "第二个加数"
+					},
+					"returns": {
+						"isOverflow": "是否发生溢出 (在这个函数中，由于使用了 unchecked，需要手动检查)",
+						"sum": "两数之和"
+					}
+				}
+			},
+			"title": "SimpleAddition",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SimpleAddition.sol": "SimpleAddition"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SimpleAddition.sol": {
+			"keccak256": "0x179bde0c02ca514ea2a20b2c4393d91325b9d167cb2f803ed6d27aab7f1a1abc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1d6ab27e31095925984e13a41d2d689c24e7e97510c8e6734d3ee7906823bd61",
+				"dweb:/ipfs/QmXcY3qYRq7jh8AYf9Z1KZPg3Mxf3npb1ofQUs4Veb9w9U"
+			]
+		}
+	},
+	"version": 1
+}
